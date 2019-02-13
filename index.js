@@ -23,6 +23,8 @@ function exactMatch(drivers, argument) {
   return qualifiedDrivers
 }
 
-function exactMatchToList(){
-
+function exactMatchToList(drivers, argument){
+  const list = exactMatch(drivers, argument).map(function(driver) {
+    return driver.name
+  })
 }
