@@ -27,4 +27,6 @@ function exactMatchToList(drivers, argument){
   const list = exactMatch(drivers, argument).map(function(driver) {
     return driver.name
   })
+
+  return list
 }
